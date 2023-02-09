@@ -1,19 +1,19 @@
+//
+
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
-import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
+//↓rootの中に<App />コンポーネントをレンダリングしている>
 root.render(
-  <React.StrictMode>
+  <React.StrictMode>  
+  {/* ↑これは直訳で厳格なモードという意味で脆弱性を発見したらエラーを出してくれる。 */}
     <App />
+    {/* ↑これはAppコンポーネント　from App.tsx */}
   </React.StrictMode>
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
