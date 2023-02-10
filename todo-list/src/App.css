@@ -1,6 +1,7 @@
 .App {
   text-align: center;
 }
+/* ↑Appの内容を中心に置いている→これはApp.tsxに渡されている */
 
 .App-logo {
   height: 40vmin;
